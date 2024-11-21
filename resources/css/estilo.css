@@ -1,0 +1,242 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family:'open sans';
+}
+.contenedor{
+    padding: 60px 0;
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+}
+.titulo{
+    color:#00ddff;
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 6px;
+    padding-top: 0;
+    text-shadow: 1px 1px 3px #747272;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.titulo{
+    text-shadow: 0 0 0.1em rgb(255, 255, 255), 0 0 0.1em rgb(255, 255, 255);
+}
+header{
+    width: 100%;
+    height: 600px;
+    background: #16BFFD; 
+    background: -webkit-linear-gradient(to right, #CB3066, #16BFFD);
+    background: linear-gradient(to right, #cb3066b4, #16bffda7), url( ../img/dj1.jpg); 
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+nav{
+    text-align: right;
+    padding: 30px 50px 0 0;
+}
+nav > a{
+    color:#e384e8ba;
+    font-weight: 300;
+    text-decoration: none;
+    margin-right: 10px;
+    font-size: 20px;
+    text-shadow: 0 0 0.4em rgb(0, 0, 0), 0 0 0.4em rgb(5, 5, 5);
+
+}
+nav > a:hover{
+    color:#ffffff;
+    font-family:Verdana, Geneva, Tahoma, sans-serif ;
+    text-shadow: 0 0 0.4em rgb(255, 255, 255), 0 0 0.4em rgb(255, 255, 255);
+}
+.textos{
+    display: flex;
+    height: 340px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+.textos h1{
+    font-size: 50px;
+    color: #fff;
+    font-family:'Times New Roman', Times, serif;
+    text-shadow: 0 0 0.4em rgb(247, 4, 255), 0 0 0.4em rgb(247, 0, 255);
+}
+.textos h2{
+    font-size:30px;
+    font-weight: 300;
+    color: #fff;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-shadow: 0 0 0.4em rgb(0, 255, 247), 0 0 0.4em rgb(1, 255, 247);
+
+}
+.ola{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding-top: 0;
+}
+.contenido{
+    width: 100%;
+    height: auto;
+    background-color: black;
+    display: flex;
+}
+.articulos{
+    width: 100%;
+    height: auto;
+    margin-top: 30px;
+}
+.secciones{
+    align-items: center;
+    padding: 5px;
+}
+.Nombre h2{
+    width: 100%;
+    height: auto;
+    text-align: center;  
+    color:#00ddff;
+    text-shadow: 0 0 0.4em rgb(255, 255, 255), 0 0 0.4em rgba(255, 255, 255, 0.572);
+}
+.Nombre p{
+    height: auto;
+    color:#ffffff;
+    font-family:cursive;
+    margin: 0 10px 0 10px;
+}
+.link h3{
+    text-decoration: none;
+    margin: 0 10px 0 10px;
+    color:#bf7ad293;
+    text-shadow: 0 0 0.2em rgb(1, 1, 1), 0 0 0.2em rgb(255, 255, 255);
+}
+.link a{
+    text-decoration: none;
+    color: #00ddff;
+    text-shadow: 0 0 0.2em rgb(255, 255, 255), 0 0 0.2em rgb(255, 255, 255);
+}
+.menu{
+    width: 100%;
+    margin-top: 50px;
+    display: block;
+    text-align: center;
+    margin-bottom: 7px;
+}
+.portafolio{
+    background: url(../img/imgA1.jpg); 
+}
+.galeria{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.imagenes{
+    width: 24%;
+    margin-bottom: 30px;
+    height: 190px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    box-shadow: 0 0 6px 0 rgba(0,0,00 .5) ;
+    border-radius: 40px 40px 40px 40px;
+    border: 3px solid  #ffffff;
+}
+.imagenes > img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.masArtistas > a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    background-color: #ffffff86;
+    border-radius: 7px;
+    font-size: 25px;
+    border:1.5px solid #6aebff;
+    text-shadow: 0 0 0.2em rgb(0, 255, 225), 0 0 0.2em rgb(255, 255, 255);
+    font-family:unset;
+}
+.masArtistas{
+    text-align: center;
+}
+.masArtistas a:hover{
+    color: #ffffff;
+}
+.hover-galeria{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    transform: scale(0);
+    transition: transform .9s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+ .hover-galeria img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+ }
+ .hover-galeria p{
+    color: #fff;
+    text-align: center;
+ }
+ .imagenes:hover .hover-galeria{
+    transform: scale(1);
+ }
+ footer{
+    background:url(../img/imagen1.jpg);
+    padding: 60px 0 30px 0;
+    margin: auto;
+    overflow: hidden;
+ }
+ .contactos h5{
+    color: #ffffff;
+    text-align: center;
+    font-size: 18px;
+ }
+ .contactos a{
+    text-decoration: none;
+    color: #00ddff;
+    text-shadow: 0 0 0.2em rgb(255, 255, 255), 0 0 0.2em rgb(255, 255, 255);
+ }
+ .contenedor-footer{
+    display: flex;
+    width: 90%;
+    justify-content: space-evenly;
+    margin: auto;
+    padding-bottom: 50PX;
+    border-bottom: 1px solid #fff ;
+ }
+ .content-foo{
+    text-align: center;
+ }
+ .content-foo  h4{
+    color: #fff;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+ }
+ .content-foo  p{
+    color: #ffffff;
+ }
+ svg{
+    color: #0fff2b;
+    width: 30px;
+    height: 30px;
+ }
+ .titulo-final{
+    text-align: center;
+    font-size: 15px;
+    margin: 20px 0 0 0;
+    color: rgb(255, 255, 255);
+}
